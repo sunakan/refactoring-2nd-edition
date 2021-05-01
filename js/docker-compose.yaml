@@ -1,0 +1,12 @@
+---
+
+version: '3.8'
+
+services:
+  app:
+    image: node:14-buster
+    working_dir: /var/local/app/
+    volumes:
+      - type: bind
+        source: ${PWD}/
+        target: /var/local/app/
