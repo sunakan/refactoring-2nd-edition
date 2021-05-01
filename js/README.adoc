@@ -5,3 +5,7 @@ $ make setup
 ----
 $ make test
 ----
+
+----
+$ vim statement.js
+----
