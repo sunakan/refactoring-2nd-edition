@@ -1,6 +1,3 @@
-//const plays = JSON.parse('{  "hamlet": {"name": "Hamlet", "type": "tragedy"},  "as−like": {"name": "As You Like It", "type": "comedy"},  "othello": {"name": "Othello", "type": "tragedy"}  }');
-//const invoices = JSON.parse('[  {  "customer": "BigCo",  "performances": [  {  "playID": "hamlet",  "audience": 55  },  {  "playID": "as−like",  "audience": 35  },  {  "playID": "othello",  "audience": 40  }  ]  }  ]');
-
 function statement(invoice, plays) {
     let totalAmount = 0;
     let volumeCredits = 0;
@@ -42,17 +39,4 @@ function statement(invoice, plays) {
     result += `You earned ${volumeCredits} credits\n`;
     return result;
 }
-
 module.exports = statement;
-
-//--------------------test
-//function main() {
-//    const fs = require('fs');
-//    const plays = JSON.parse(fs.readFileSync('./plays.json', 'utf8'));
-//    const invoices = JSON.parse(fs.readFileSync('./invoices.json', 'utf8'));
-//    for (const invoice of invoices) {
-//        console.log(statement(invoice, plays));
-//    }
-//}
-//
-//main();
